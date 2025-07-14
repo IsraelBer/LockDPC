@@ -17,11 +17,8 @@ jobs:
         distribution: temurin
         java-version: 11
 
-    - name: Convert gradlew line endings
-      run: dos2unix gradlew
-
     - name: Give gradlew permission
-      run: chmod +x gradlew
+      run: chmod +x ./gradlew
 
     - name: Build Debug APK
       run: ./gradlew assembleDebug
