@@ -17,6 +17,9 @@ jobs:
         distribution: temurin
         java-version: 11
 
+    - name: Give gradlew permission
+      run: chmod +x ./gradlew
+
     - name: Build Debug APK
       run: ./gradlew assembleDebug
 
