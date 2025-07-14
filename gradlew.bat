@@ -1,2 +1,2 @@
 @echo off
-echo Running gradle...
+echo Simulated gradlew.bat
