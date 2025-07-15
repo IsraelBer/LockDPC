@@ -1,16 +1,22 @@
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lockdpc">
+    package="com.lockdpc">
 
     <application
+        android:allowBackup="false"
         android:label="LockDPC"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ProtectedActivity"
+            android:exported="false" />
     </application>
+
 </manifest>
