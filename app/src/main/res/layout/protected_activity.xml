@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/passwordText"
-        android:text="Password"
-        android:textSize="18sp"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/passwordInput"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/copyButton"
-        android:text="Copy and continue"
+        android:id="@+id/enterButton"
+        android:text="Enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>
